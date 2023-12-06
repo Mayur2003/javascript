@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script</title>
+</head>
+<script type="text/javascript">
+	
+	function mayur() {
+		var x=document.getElementById('m').value;
+		var y=document.getElementById('n').value;
+		var z=document.getElementById('o').value;
+
+		var ans = parseInt(y) * parseInt(z) / 100;
+
+		var bk = parseInt(y) + ans;
+				
+        document.write( 'hi'+ "&nbsp; " +(x)+'Your Salary Was' +parseInt(y)+' but now Your Salary will be'  +  bk + 'per Year' );			
+	}
+
+</script>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>Enter Name :- </td>
+				<td> <input type="text" id="m" placeholder="Enter Name"></td>
+			</tr>
+
+			<tr>
+				<td>Enter Salary :- </td>
+				<td> <input type="number"  id="n" placeholder="Enter a Salary"></td>
+			</tr>
+
+			<tr>
+				<td>Enter A Increment</td>
+				<td><input type="number" id="o" placeholder="Increment"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="Ok" onclick="mayur()"></td>
+				
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>

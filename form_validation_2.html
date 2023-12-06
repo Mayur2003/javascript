@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        background-color: black;
+        color: aqua;
+    }
+    .mk{
+        text-align: center;
+       
+    }
+
+    .mk>label{
+        color: red;
+      
+    }
+
+    
+    .mk>span{
+        color: blue;
+    }
+</style>
+<body>
+    <h1>Registarion Form</h1>
+    <div class="mk">
+    <label for="fname">First Name </label>
+    <input type="text" name="fname" id="fname" onblur="mayur(this,'my','first name')">
+    <span id="my"> </span>
+
+    <br> <br> <br>
+
+    <label for="lname">Last Name </label>
+    <input type="text" name="lname" id="lname" onblur="mayur(this,'my2','last name')">
+    <span id="my2"></span>
+
+    <br> <br> <br>
+
+    <label for="email">e-mail</label>
+    <input type="email" name="email" id="email" onblur="mayur(this,'my3','email')">
+    <span id="my3"></span>
+    
+    <br> <br> <br>
+
+    <label for="password"> Password </label>
+    <input type="password" name="ps" id="ps" onblur="mayur(this,'my4','password')">
+    <span id="my4"></span>
+
+    <br> <br> <br>
+
+    <label for="Gender">Gender</label>
+    <input type="radio" name="gen" id="gen" onblur="mayur(this,'my5', 'gender')"> Male
+    <input type="radio" name="gen" id="gen" onblur="mayur(this,'my5', 'gender')"> Fe-Male
+    <input type="radio" name="gen" id="gen" onblur="mayur(this,'my5', 'gender')"> Others 
+
+    <span id="my5"></span>
+
+    <br> <br> <br>
+
+    <label for="Mobile"> Mobile </label>
+    <input type="number" name="mob" id="mob" onblur="mayur(this,'my6','mobile')">
+    <span id="my6"></span>
+
+    <br> <br> <br>
+
+    <label for="hobby">Hobby</label>
+    <input type="checkbox" name="hob" id="hob" onblur="mayur(this,'my7', 'hobbies')"> Cricket
+    <input type="checkbox" name="hob" id="hob" onblur="mayur(this,'my7', 'hobbies')"> Singing
+    <input type="checkbox" name="hob" id="hob" onblur="mayur(this,'my7', 'hobbies')"> Foot-ball
+    <span id="my7">
+
+    </span>
+</div>
+    <script>
+        function mayur(hk,vaibhav,vishal)
+        {
+            console.log(hk);
+            console.log(vaibhav);
+            console.log(vishal);
+
+            let name = document.getElementById('fname').value;
+
+            console.log(name);
+
+            if (name == "") {
+                document.getElementById(vaibhav).innerText = "Please Enter " + vishal;
+                
+            }
+        }
+    </script>
+
+</body>
+</html>

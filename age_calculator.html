@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>date of birth </title>
+</head>
+<script type="text/javascript">
+	 function jkl(){
+	 	var x=document.getElementById('k').value;
+		var y=document.getElementById('l').value;
+
+		var z = 2023-(y);
+		document.write('hi &nbsp;'+(x)+'your age is'  + z);
+	 }
+
+</script>
+<body>
+<form>
+	<table>
+		<tr>
+			<td> Enter A Name:- </td>
+			<td><input type="text" placeholder="please enter a name" id="k"></td>
+		</tr>
+
+		<tr>
+			<td> Enter A Date Of Year :- </td>
+			<td><input type="text" placeholder="enter a date of year" maxlength="4" id="l"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="count" onclick="jkl()"></td>
+			
+		</tr>
+	</table>
+</form>
+</body>
+</html>

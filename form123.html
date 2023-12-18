@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation On Blur Event</title>
+</head>
+<body>
+    
+
+    <label for="uname">User Name</label>
+    <input type="text" name="uname" id="uname" onblur="mayur(this,'jk', 'user name')">
+    <span id="jk"></span>
+     <br> <br>
+
+     <label for="pass">Password</label>
+     <input type="password" name="pass" id="pass" onblur="mayur(this,'io','password')">
+     <span id="io"></span>
+
+
+     <script>
+        function mayur(vinit,jeet,komik)
+
+        {
+            var yu = document.getElementById('uname').value;
+            console.log(yu);
+
+            if(yu == "")
+            {
+                document.getElementById(jeet).innerText = 'Please Enter ' + komik;
+            }
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Page </title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    .container{
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 5%;
+        display: flex;
+        gap: 60px;
+    }
+
+    .dv1{
+        height: 50%;
+    }
+     
+    
+    .dv{
+        justify-content: center;
+        align-items: center;
+    }
+    .dv2{
+        padding-top: 5%;
+        border: 1PX solid black;
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+        
+        
+    }
+
+    .dv2>img{
+        margin-left: 25%
+    }
+
+    #ui,#pass{
+        padding: 2%;
+        padding-bottom: ;
+        margin-bottom: 4%;
+       
+    }
+
+    #op{
+        margin: 0 auto;
+    }
+
+    .bt{
+        padding-left: 42%;
+        padding-right: 42%;
+        border-radius: 7px;
+        background-color: rgb(144, 144, 255);
+        color: aliceblue;
+        height: 2%; 
+        font-size: 20px;       
+    }
+
+    .kl{
+        padding-top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .kl>hr{
+        height: 0.1vh;
+        width: 30%;
+        margin: 0; 
+    }
+
+    .op{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+     align-items: center;
+        text-decoration: none;
+        padding-bottom: 2%;
+    }
+    .po{
+        margin-left: 35%;
+    }
+
+
+    #unameplaceholder,
+    #passplaceholder {
+      position: absolute;
+      color: grey;
+      transition: all 270ms;
+    }
+
+    #unameplaceholder {
+      top: 31%;
+      left: 17.8%;
+      pointer-events: none;
+    }
+
+    #passplaceholder {
+      top: 39%;
+      left: 17.8%;
+      pointer-events: none;
+    }
+
+    #show{
+      position: absolute;
+      top: 38%;
+      right: 18%;
+      padding-block: 1%;
+      background-color: #fafafa;
+      display: none;
+    }
+
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="dv1">
+            <img src="SS1.png" alt="instagram image">
+        </div>
+
+        <div class="dv2">
+            <img src="text.jpg" alt="">
+            <div class="dv">
+        <form action="">
+            <table id="op">
+                <tr>
+                    <td><input type="text"  name="ui" id="ui" size="35" oninput="Mayur()"></td>
+                </tr>
+
+                
+                <tr>
+                    <td><input type="password"  id="pass" name="pass" size="35" oninput="Mayur()"> </td>
+                    <span id="show" onclick="Show()">SHOW</span>
+                    <p id="unameplaceholder">Phone Number , Username , Or Email</p>
+                     <p id="passplaceholder">Password</p>
+                </tr>
+                <tr>
+                    <td><input type="button" class="bt" value="Log in" onclick="mayur()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+        <div class="kl">
+         
+                <hr>    
+                <span>OR</span><hr>
+            
+        </div>
+        <div class="op">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png" alt="" width="6%"> <a href="">Log in with Facebook</a>
+    </div>
+        <a href="" class="po">Forget Password ?</a>
+        </div>
+    </div>
+
+
+
+    <script>
+        function Mayur()
+        {
+            let uname = document.getElementById("ui").value;
+            let pss = document.getElementById("pass").value;
+
+
+            if(uname == "")
+            {
+                document.getElementById("unameplaceholder").style.top = "30%";
+                document.getElementById("ui").style.padding = "1%";
+                document.getElementById("unameplaceholder").style.fontSize = "16px";
+            }
+
+            
+            else 
+            {
+
+                document.getElementById("ui").style.paddingTop = "17px";
+                document.getElementById("ui").style.paddingBottom = "1px";
+                document.getElementById("unameplaceholder").style.top = "30%";
+                document.getElementById("unameplaceholder").style.fontSize = "16px";
+            }
+
+
+            if(pss == "")
+            {
+                document.getElementById("passplaceholder").style.top = "38%";
+                document.getElementById("pass").style.padding = "1%";
+                document.getElementById("passplaceholder").style.fontSize = "16px";
+            }
+
+            
+            else 
+            {
+
+                document.getElementById("pass").style.paddingTop = "1%";
+                document.getElementById("pass").style.paddingBottom = "10px";
+                
+                document.getElementById("passplaceholder").style.top = "38%";
+                document.getElementById("passplaceholder").style.fontSize = "15px";
+            }
+        }
+    </script>
+    
+</body>
+</html>

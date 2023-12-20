@@ -45,7 +45,9 @@
 
     #ui,#pass{
         padding: 2%;
-        padding-bottom: ;
+        /* padding-bottom: ; */
+        padding-inline: 3%;
+        padding-block: 4% 0.4%;
         margin-bottom: 4%;
        
     }
@@ -99,14 +101,14 @@
     }
 
     #unameplaceholder {
-      top: 31%;
-      left: 17.8%;
+      top: 31.5%;
+      left: 18.9%;
       pointer-events: none;
     }
 
     #passplaceholder {
-      top: 39%;
-      left: 17.8%;
+      top: 39.3%;
+      left: 18.9%;
       pointer-events: none;
     }
 
@@ -171,44 +173,39 @@
         {
             let uname = document.getElementById("ui").value;
             let pss = document.getElementById("pass").value;
-
-
+            
+            
             if(uname == "")
             {
-                document.getElementById("unameplaceholder").style.top = "30%";
-                document.getElementById("ui").style.padding = "1%";
+                document.getElementById("unameplaceholder").style.top = "31.5%";
                 document.getElementById("unameplaceholder").style.fontSize = "16px";
             }
-
+            
             
             else 
             {
-
-                document.getElementById("ui").style.paddingTop = "17px";
-                document.getElementById("ui").style.paddingBottom = "1px";
+                
                 document.getElementById("unameplaceholder").style.top = "30%";
-                document.getElementById("unameplaceholder").style.fontSize = "16px";
+                document.getElementById("unameplaceholder").style.fontSize = "12px";
             }
-
-
+            
+            
             if(pss == "")
             {
-                document.getElementById("passplaceholder").style.top = "38%";
-                document.getElementById("pass").style.padding = "1%";
+                document.getElementById("passplaceholder").style.top = "39.3%";
                 document.getElementById("passplaceholder").style.fontSize = "16px";
             }
-
+    
             
             else 
-            {
-
-                document.getElementById("pass").style.paddingTop = "1%";
-                document.getElementById("pass").style.paddingBottom = "10px";
-                
-                document.getElementById("passplaceholder").style.top = "38%";
-                document.getElementById("passplaceholder").style.fontSize = "15px";
+            {                
+                document.getElementById("passplaceholder").style.top = "38.5%";
+                document.getElementById("passplaceholder").style.fontSize = "12px";
             }
+            
         }
+        
+       
     </script>
     
 </body>

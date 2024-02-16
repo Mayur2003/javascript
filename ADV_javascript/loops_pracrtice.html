@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops Practice Set</title>
+</head>
+<body>
+
+    <h3> Write A Program to print the marks of a student in an object using for loop</h3>
+
+    <h4>Show Output On Console Screen </h4>
+
+
+    <h3>Problem No 3 :- Write A program to prinnt "Try again" unntill the user enters the correct number.</h3>
+
+
+    <h3>Problem No  4 :- Write A Function to Find Mean 5 Of % numbers</h3>
+
+    <script>
+        let mk  = {
+            mayur : 80,
+            malav : 99,
+            Bhaumik : 30, 
+            Chirag  : 65
+        }
+
+        for(i=0;i<Object.keys(mk).length;i++){
+
+            console.log("The marks of " + Object.keys(mk)[i] + " are " + mk[Object.keys(mk)[i]] );
+
+        }
+
+        
+
+        // using For In Solution
+
+        for(key in mk){
+            console.log(" The marks of " + key + " are "  + mk[key])
+        }
+
+
+
+        const mayur = () => {
+
+            let cn = 13 ;
+
+            let m = prompt("Enter The Number Please : ");
+
+            while (i!=cn) {
+                 i = prompt("Enter The Number Please : ");
+                 console.log('try again');
+                
+            }
+
+            console.log(" Congratulations You Enter A Correct Number ")
+
+        }
+
+        mayur();
+
+
+        const mean =  (a,b,c,d,e) => {
+            return(a+b+c+d+e) / 5 ;
+        } 
+
+        console.log(mean(4,5,6,7,8));
+
+    </script>
+    
+</body>
+</html>

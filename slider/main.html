@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slider Image</title>
+        <style>
+            *{
+                color-scheme: dark;
+            }
+            img{
+                width: 27%;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="slideimage/bike1.jpg" alt="" id="imgsld">
+
+        
+
+        <button onclick="next()">next</button>
+
+        <script>
+
+            const SLIDER = ["slideimage/bike2.png","slideimage/bike3.png"];
+
+            let i = 0;
+            function next(){
+                    document.getElementById("imgsld").src = SLIDER[i];
+                    console.log(SLIDER[i]);
+                    i++;
+
+
+                if(i == 2)
+                {
+                    i = 0;
+                }
+            }
+
+        </script>
+    </body>
+    </html>

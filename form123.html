@@ -17,6 +17,12 @@
      <input type="password" name="pass" id="pass" onblur="mayur(this,'io','password')">
      <span id="io"></span>
 
+     <br> <br>
+     
+     <label for="Mobile Number"> Mobile Number</label>
+     <input type="text" name="mn" id="mn" onblur="vishal(this,'lp','Mobile Number')">
+     <span id="lp"></span>
+
 
      <script>
         function mayur(vinit,jeet,komik)
@@ -29,6 +35,18 @@
             {
                 document.getElementById(jeet).innerText = 'Please Enter ' + komik;
             }
+        }
+
+
+        function vishal(bago,mk,lo)
+        {
+            var ty = document.getElementById('mn').value;
+             console.log(ty);
+
+             if(ty == "")
+             {
+                document.getElementById(mk).innerText = 'Please Enter '+ lo;
+             }
         }
      </script>
 </body>

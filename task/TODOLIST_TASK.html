@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Task In html</title>
+</head>
+
+<style>
+
+    .container{
+        width:90%;
+        margin: 0 auto;
+    }
+    .div1{
+        height: 21vh;
+        width: 100%;
+        border: 3px solid black;
+}
+
+#ui{
+    width: 80%;
+    height: 20vh;
+    border: 3px solid black;
+}
+
+#op{
+    padding: 10px 30px;
+    background-color: black;
+    color: aqua;
+}
+
+button{
+    font-size: 20px;
+    padding: 15px 50px;
+    border: 3px solid black;
+    color: aqua;
+    background-color: black;
+}
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="div1">
+
+            <input type="text" id="ui" placeholder="Add Something">
+            
+            <button onclick="yui()" id="op">Add Me</button>
+
+            <!-- <button>mk</button> -->
+
+
+        </div>
+
+        <div class="div2">
+            <input type="checkbox" value="">
+
+            <p id="iopo">
+
+            </p>
+
+            <button>Edit</button>
+
+            <button>Delete</button>
+        </div>
+       
+    </div>
+
+
+
+    <script>
+        function yui(){
+            var node = document.getElementById('ui').value;
+
+            let element = document.createElement('p');
+
+            let elementtext = document.createTextNode(node);
+
+            element.appendChild(elementtext);
+
+            document.getElementById('iopo').appendChild(element);
+
+            document.getElementById('ui').value = "";
+
+
+
+
+
+            // var node = document.getElementById('ui').value;
+
+            let element2 = document.createElement('button');
+
+            let elementtext2 = document.createTextNode('Edit');
+
+            element2.appendChild(elementtext2);
+
+            document.getElementById('div2').appendChild(element2);
+
+            // document.getElementById('ui').value = "";
+
+        }
+    </script>
+</body>
+</html>
